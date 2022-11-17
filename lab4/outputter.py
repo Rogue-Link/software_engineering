@@ -1,7 +1,7 @@
 import os
 import csv
 class Output:
-    
+
     def get_equal_output(file_1, file_2, path):
         with open('./output/equal.csv','r+') as file:
             n = file.read()
@@ -15,7 +15,6 @@ class Output:
             writer.writerow([path + file_1,path + file_2])
 
     def init_output():
-        #s.mkdir(r'output')
         with open('./output/equal.csv','w') as file:
             writer = csv.writer(file)
             writer.writerow(["file1","file2"])

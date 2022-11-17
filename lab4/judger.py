@@ -11,6 +11,7 @@ path = Inputter.gat_path()
 files = os.listdir(path)
 Output.init_output()
 for file in files:
+    print(file)
     if os.path.isdir(path + "/" +file):
         path_1 = path + "/" +file
         programs = os.listdir(path_1)
